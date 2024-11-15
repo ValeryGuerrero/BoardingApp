@@ -32,7 +32,7 @@ fun MainOnBoarding(navController: NavController, store: StoreBoarding){
         PageData(
             R.raw.page2,
             "Uso de onBoarding",
-            "Libre acceso a BoardingApp"
+            "Libre acceso a BoardingApp Solo para ti"
         )
     )
 
