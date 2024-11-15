@@ -23,7 +23,7 @@ fun NavManager(){
 
     NavHost(
         navController = navController,
-        startDestination= "Splash"
+        startDestination= if(store.value==true) "home" else "Splash"
     ){
         composable("onBoarding"){
             MainOnBoarding(navController, dataStore)
@@ -34,7 +34,7 @@ fun NavManager(){
         }
 
         composable("Splash"){
-            SplashScreen(navController)
+            SplashScreen(navController, store.value)
         }
     }
 }
